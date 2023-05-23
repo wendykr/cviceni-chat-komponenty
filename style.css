@@ -1,0 +1,19 @@
+/* Používáme intuitivní výpočet rozměrů prvků. */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
