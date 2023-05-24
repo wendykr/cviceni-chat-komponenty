@@ -5,6 +5,8 @@ export const MessageList = () => {
     const element = document.createElement('div');
     element.setAttribute('id','result');
 
+    const loadMessages = () => {
+
         fetch('https://czechichat.deno.dev/api/list-messages', {
             method: 'GET',
             headers: {
@@ -23,6 +25,10 @@ export const MessageList = () => {
             element.innerHTML = '';
             element.append(...listMessage);
         })
+    }
+
+    loadMessages();
+    setInterval(loadMessages, 3000);
 
     return element;
 }

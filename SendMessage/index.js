@@ -1,4 +1,4 @@
-import { MessageList } from '../MessageList/index.js';
+// import { MessageList } from '../MessageList/index.js';
 
 export const SendMessage = () => {
 
@@ -14,7 +14,7 @@ export const SendMessage = () => {
         </div>
         <input class="form__button" type="submit" value="Send">
         `;
-        
+
     const nameElm = element.querySelector('#name');
     const messageElm = element.querySelector('#message');
 
@@ -43,12 +43,6 @@ export const SendMessage = () => {
     }
 
     element.addEventListener('submit', process);
-
-    setInterval(() => {
-        console.log('zpráva');
-    }, 3000)
-
-    setInterval(MessageList, 3000);
 
     return element;
 }
